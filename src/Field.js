@@ -28,7 +28,7 @@ function Field() {
     exit={{ opacity: 0, scale: 0.5, transition: { duration: 0.2 }}}
     onClick={() => setNotiFlag(false)}
     >
-      {count>3 && <iframe
+      {count>3 && <div><iframe
       title="soundcloud notification"
       className = "scFrame"
       width="100%"
@@ -37,7 +37,9 @@ function Field() {
       frameborder="yes"
       allow="autoplay"
       src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/745415452&color=%23ff5500&auto_play=false&hide_related=false&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true">
-      </iframe>}
+      </iframe></div>
+      }
+
 
     </motion.h2>
     
@@ -53,7 +55,7 @@ function Field() {
 
       <ul>
         <AnimatePresence initial={false}>
-      {count>1 && notiFlag==true ?nortArea : null}
+      {count>1 && notiFlag===true ?nortArea : null}
         </AnimatePresence>
 
       </ul>
