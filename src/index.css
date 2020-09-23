@@ -30,6 +30,8 @@ ul {
 h2 {
   width: 425px;
   height: 200px;
+  font-size: 16px;
+  font-family: Consolas;
   background: #ebbbc7c7;
   margin: 12px;
   border-radius: 20px;
