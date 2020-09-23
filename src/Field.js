@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 
 //motions
 import { motion, AnimatePresence } from "framer-motion";
+import Iframe from 'react-iframe'
 
 function Field() {
   //time etc
@@ -28,16 +29,12 @@ function Field() {
     onClick={() => setNotiFlag(false)}
     >
       { 
-      count>2 && <iframe
-        title="soundcloud notification"
+      count>2 && <Iframe
         className = "scFrame"
-        width="100%"
-        height="250"
-        scrolling="no"
-        frameborder="yes"
-        allow="autoplay"
-        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/745415452&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=true&show_teaser=true&visual=true">
-        </iframe>
+        display="initial"
+        
+        url="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/745415452&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=true&show_teaser=true&visual=true"
+        allowFullScreen/>
       }
 
     </motion.h2>
