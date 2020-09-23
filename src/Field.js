@@ -29,6 +29,7 @@ function Field() {
     onClick={() => setNotiFlag(false)}
     >
       {count>3 && <iframe
+      title="soundcloud notification"
       className = "scFrame"
       width="100%"
       height="250"
