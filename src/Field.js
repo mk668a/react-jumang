@@ -10,8 +10,13 @@ function Field() {
   const [count, setCount] = useState(0);
 
   //notification flag
-  const [notiFlag, setNotiFlag] = useState(true);
+  const [notiFlag, setNotiFlag] = useState(false);
 
+
+  function ass(e)
+  {
+    setNotiFlag(!notiFlag);
+  }
   useEffect(() => {
         setInterval(() => {
             setCount(count => count + 1);
@@ -29,12 +34,10 @@ function Field() {
     onClick={() => setNotiFlag(false)}
     >
       { 
-      count>2 && <Iframe
+      notiFlag && <Iframe
         className = "scFrame"
-        display="initial"
-        
         url="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/745415452&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=true&show_teaser=true&visual=true"
-        allowFullScreen/>
+        ></Iframe>
       }
 
     </motion.h2>
@@ -45,6 +48,7 @@ function Field() {
     <div className="Field">
       <header className="Field-header">
       </header>
+      <button onClick={ass} >test</button>
       <ul>
         <AnimatePresence initial={false}>
       {count>1 && notiFlag===true ?nortArea : null}

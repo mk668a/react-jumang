@@ -25,28 +25,22 @@ ul {
   flex-direction: column;
   list-style: none;
   justify-content: flex-end;
-  border-color: white;
 }
 
 h2 {
   width: 425px;
   height: 200px;
-  font-size: 16px;
-  font-family: Consolas;
   background: #ebbbc7ab;
   margin: 12px;
   border-radius: 20px;
-  border-color: white;
   stroke: transparent;
 }
 
 .scFrame {
-  border-color: white;
-  stroke: transparent;
-  right: 1;
   width: 425px;
   height: 200px;
   opacity: 80%;
   border-radius: 20px;
-  
+  outline: none;
+  position: absolute;
 }
