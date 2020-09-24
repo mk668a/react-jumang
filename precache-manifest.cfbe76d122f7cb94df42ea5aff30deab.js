@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "55ebed293be8f0d63f261183fee3a05d",
+    "revision": "7704023a8d57800841fe51fbc9eea3c7",
     "url": "/react-jumang/index.html"
   },
   {
-    "revision": "56c7f20164bd98355154",
-    "url": "/react-jumang/static/css/main.9a41dff6.chunk.css"
+    "revision": "63b9881ad3bead4b0262",
+    "url": "/react-jumang/static/css/main.4f33cb74.chunk.css"
   },
   {
     "revision": "5a4af998082d6b6a5787",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/react-jumang/static/js/2.f2ee8366.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "56c7f20164bd98355154",
-    "url": "/react-jumang/static/js/main.e04cf6e9.chunk.js"
+    "revision": "63b9881ad3bead4b0262",
+    "url": "/react-jumang/static/js/main.7fb36ead.chunk.js"
   },
   {
     "revision": "ea2a66ee35587d44c8c5",
