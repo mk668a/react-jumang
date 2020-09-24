@@ -25,7 +25,7 @@ function Field() {
 
   //notification card
   const nortArea = (
-    <motion.h2
+    <motion.li
     key={0}
     positionTransition
     initial={{ opacity: 0, y: 100, scale: 0.2 }}
@@ -33,14 +33,13 @@ function Field() {
     exit={{ opacity: 0, scale: 0.5, transition: { duration: 0.2 }}}
     onClick={() => setNotiFlag(false)}
     >
-      { 
-      notiFlag && <Iframe
+      <Iframe
         className = "scFrame"
+        frameborder="1"
+        allowfullscreen
         url="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/745415452&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=true&show_teaser=true&visual=true"
-        ></Iframe>
-      }
-
-    </motion.h2>
+     ></Iframe>
+    </motion.li>
     
   )
 
@@ -48,10 +47,9 @@ function Field() {
     <div className="Field">
       <header className="Field-header">
       </header>
-      <button onClick={ass} >test</button>
       <ul>
-        <AnimatePresence initial={false}>
-      {count>1 && notiFlag===true ?nortArea : null}
+        <AnimatePresence initial={true}>
+      {count>1 && nortArea}
         </AnimatePresence>
 
       </ul>
