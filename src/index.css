@@ -31,13 +31,36 @@ li {
   width: 425px;
   height: 200px;
   background: #ebbbc7c0;
-  margin: 12px;
-  border-radius: 20px;
+  margin: 10px;
+  border-radius: 16px;
   stroke: transparent;
 }
 
-Iframe {
+iframe {
   width: 425px;
   height: 200px;
-  border-radius: 20px;
+  border-radius: 16px;
+}
+
+.nortMessage{
+  width: 425px;
+  height: 40px;
+  border-radius: 16px;
+  background: #d6d3d4c0;
+  margin: 10px;
+  font-size: 23px;
+  font-family: monospace;
+  text-align: center;
+  position: relative;
+}
+
+.battenNotif{
+  text-align: center;
+  position: center;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  display: inline-block;
+  vertical-align: center;
+  padding: 10px;
 }
