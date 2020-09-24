@@ -56,7 +56,7 @@ function Field() {
     <motion.li
       key={0}
       initial={{ opacity: 0, y: 500, scale: 0 }}
-      animate={{ opacity: 1, y: 0, scale: 1 }}
+      animate={{ opacity: 1, y: 0, scale: 1}}
       whileHover={{ scale: 1.05 }}
       exit={{ opacity: 0, scale: 0.5, transition: { duration: 0.2 }}}
       >
