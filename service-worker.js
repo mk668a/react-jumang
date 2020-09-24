@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/react-jumang/precache-manifest.b9e2a7f881c3c5e4f46aa747faf3d2c4.js"
+  "/react-jumang/precache-manifest.493d8e5b3f0673a2634be34b6e3f49cc.js"
 );
 
 self.addEventListener('message', (event) => {
