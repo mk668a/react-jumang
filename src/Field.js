@@ -20,8 +20,8 @@ function Field() {
   const Path = props => (
     <motion.path
       fill="transparent"
-      strokeWidth="3"
-      stroke="hsl(0, 0%, 18%)"
+      strokeWidth="1.5"
+      stroke="hsl(0, 0%, 1%)"
       strokeLinecap="round"
       {...props}
     />
@@ -31,11 +31,17 @@ function Field() {
     <motion.p
       className="nortMessage"
       key={2}
-      initial={{ opacity: 0, y: 500, scale: 0 }}
-      animate={{ opacity: 1, y: 0, scale: 1 }}
-      exit={{ opacity: 0, scale: 0.5, transition: { duration: 0.2 }}}
+      style = {{background: '#d6d3d4c0', rotate: 0}}
+      initial={{ opacity: 0, y: 50, scale: 0, background: '#d6d3d4c0', rotate: 0 }}
+      animate={{ opacity: 1, y: 0, scale: 1, background: '#d6d3d4c0', rotate: 0}}
+      whileHover={{ background: '#EEd3d4c0' }}
+      whileTap={{
+        scale: 0.95,
+      }}
+      exit={{ opacity: 0, scale: 0.1, transition: { duration: 0.2 }}}
       onClick={() => setNotiFlag(false)}>
-      <svg
+      <motion.svg
+        key={3}
         className="battenNotif"
         width="23"
         height="23"
@@ -43,7 +49,7 @@ function Field() {
        >
         <Path d="M 3 16.5 L 17 2.5" />
         <Path d="M 3 2.5 L 17 16.346" />
-      </svg>
+      </motion.svg>
     </motion.p>
   )
   const nortArea = (
@@ -51,9 +57,10 @@ function Field() {
       key={0}
       initial={{ opacity: 0, y: 500, scale: 0 }}
       animate={{ opacity: 1, y: 0, scale: 1 }}
+      whileHover={{ scale: 1.05 }}
       exit={{ opacity: 0, scale: 0.5, transition: { duration: 0.2 }}}
       >
-      { count>8 && <iframe
+      { count>6 && <iframe
         title="soundcloud link"
         key={1}
         frameborder="no"
@@ -71,8 +78,8 @@ function Field() {
       </header>
       <ul>
         <AnimatePresence initial={true}>
-          {count>3 && notiFlag && nortMessage}
-          {count>4 && notiFlag && nortArea}
+          {count>4 && notiFlag && nortMessage}
+          {count>2 && notiFlag && nortArea}
         </AnimatePresence>
 
       </ul>

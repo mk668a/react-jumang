@@ -28,7 +28,7 @@ ul {
 }
 
 li {
-  width: 425px;
+  width: 400px;
   height: 200px;
   background: #ebbbc7c0;
   margin: 10px;
@@ -37,13 +37,13 @@ li {
 }
 
 iframe {
-  width: 425px;
+  width: 400px;
   height: 200px;
   border-radius: 16px;
 }
 
 .nortMessage{
-  width: 425px;
+  width: 400px;
   height: 40px;
   border-radius: 16px;
   background: #d6d3d4c0;
@@ -62,5 +62,5 @@ iframe {
   top: 0;
   display: inline-block;
   vertical-align: center;
-  padding: 10px;
+  padding: 12px;
 }
