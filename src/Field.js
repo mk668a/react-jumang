@@ -10,13 +10,8 @@ function Field() {
   const [count, setCount] = useState(0);
 
   //notification flag
-  const [notiFlag, setNotiFlag] = useState(false);
+  const [notiFlag, setNotiFlag] = useState(true);
 
-
-  function ass(e)
-  {
-    setNotiFlag(!notiFlag);
-  }
   useEffect(() => {
         setInterval(() => {
             setCount(count => count + 1);
@@ -33,12 +28,8 @@ function Field() {
     exit={{ opacity: 0, scale: 0.5, transition: { duration: 0.2 }}}
     onClick={() => setNotiFlag(false)}
     >
-      <Iframe
-        className = "scFrame"
-        frameborder="1"
-        allowfullscreen
-        url="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/745415452&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=true&show_teaser=true&visual=true"
-     ></Iframe>
+
+      <iframe width="425" height="200" src="https://www.youtube.com/embed/q9tpBtvTTz8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </motion.li>
     
   )
@@ -49,7 +40,7 @@ function Field() {
       </header>
       <ul>
         <AnimatePresence initial={true}>
-      {count>1 && nortArea}
+      {count>1 && notiFlag && nortArea}
         </AnimatePresence>
 
       </ul>
