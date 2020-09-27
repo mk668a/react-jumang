@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/react-jumang/static/css/main.2c5f4206.chunk.css",
-    "main.js": "/react-jumang/static/js/main.57052c56.chunk.js",
-    "main.js.map": "/react-jumang/static/js/main.57052c56.chunk.js.map",
+    "main.css": "/react-jumang/static/css/main.b87fb10c.chunk.css",
+    "main.js": "/react-jumang/static/js/main.e04fa407.chunk.js",
+    "main.js.map": "/react-jumang/static/js/main.e04fa407.chunk.js.map",
     "runtime-main.js": "/react-jumang/static/js/runtime-main.b6083c5e.js",
     "runtime-main.js.map": "/react-jumang/static/js/runtime-main.b6083c5e.js.map",
     "static/js/2.76f2099b.chunk.js": "/react-jumang/static/js/2.76f2099b.chunk.js",
     "static/js/2.76f2099b.chunk.js.map": "/react-jumang/static/js/2.76f2099b.chunk.js.map",
     "index.html": "/react-jumang/index.html",
-    "precache-manifest.e98e1bba5a8dfaad476ee2809b8acdbc.js": "/react-jumang/precache-manifest.e98e1bba5a8dfaad476ee2809b8acdbc.js",
+    "precache-manifest.7063a50bd85e9361e704bb2b35321e19.js": "/react-jumang/precache-manifest.7063a50bd85e9361e704bb2b35321e19.js",
     "service-worker.js": "/react-jumang/service-worker.js",
-    "static/css/main.2c5f4206.chunk.css.map": "/react-jumang/static/css/main.2c5f4206.chunk.css.map",
+    "static/css/main.b87fb10c.chunk.css.map": "/react-jumang/static/css/main.b87fb10c.chunk.css.map",
     "static/js/2.76f2099b.chunk.js.LICENSE.txt": "/react-jumang/static/js/2.76f2099b.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.b6083c5e.js",
     "static/js/2.76f2099b.chunk.js",
-    "static/css/main.2c5f4206.chunk.css",
-    "static/js/main.57052c56.chunk.js"
+    "static/css/main.b87fb10c.chunk.css",
+    "static/js/main.e04fa407.chunk.js"
   ]
 }
