@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import Field from './Field';
+import Apps from './Apps';
+import "./index.scss";
 
 ReactDOM.render(
-    <Field />
+    <Apps />
   ,
   document.getElementById('root')
 );

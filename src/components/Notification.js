@@ -2,7 +2,7 @@ import React from 'react';
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-function Field() {
+const Notification = () =>  {
     //time etc
     const [count, setCount] = useState(0);
     //notification flag
@@ -79,17 +79,17 @@ function Field() {
 
 
     return ( 
-    <div className = "Field" >
-        <header className = "Field-header" >
+    <div className = "Notification" >
+        <header className = "Notification-header" >
         </header> 
-
         <ul>
-        <AnimatePresence initial = { true } > { count > 10 && notiFlag && nortMessage } { count > 6 && notiFlag && nortArea } 
+        <AnimatePresence initial = { true } >
+            { count > 10 && notiFlag && nortMessage }
+            { count > 6 && notiFlag && nortArea } 
         </AnimatePresence>
         </ul>
-        
         </div>
     );
 }
 
-export default Field;
+export default Notification;
