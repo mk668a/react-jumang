@@ -1,3 +1,5 @@
+![README LOGO](_design/bk.png)
+
 ##  jumang potaru, a generic gateway website using react.js
 
 this is created and deployed using a useful development tool, [create react app](https://create-react-app.dev/)

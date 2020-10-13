@@ -1,6 +1,11 @@
 {
-  "short_name": "React App",
+  "short_name": "jumang potaru",
   "name": "react-jumang",
+  "jumang3d": [
+    {
+      "src": "../models/jumang.gltf"
+    }
+  ],
   "icons": [
     {
       "src": "icon.ico",

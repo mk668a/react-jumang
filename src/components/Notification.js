@@ -18,7 +18,7 @@ const Notification = () =>  {
     //notification card
     const Path = props => ( <
         motion.path fill = "transparent"
-        strokeWidth = "1.5"
+        strokeWidth = "1.0"
         stroke = "hsl(0, 0%, 1%)"
         strokeLinecap = "round" {...props }
         />
@@ -84,8 +84,8 @@ const Notification = () =>  {
         </header> 
         <ul>
         <AnimatePresence initial = { true } >
-            { count > 10 && notiFlag && nortMessage }
-            { count > 6 && notiFlag && nortArea } 
+            { count > 4 && notiFlag && nortMessage }
+            { notiFlag && nortArea } 
         </AnimatePresence>
         </ul>
         </div>
