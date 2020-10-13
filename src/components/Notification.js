@@ -19,7 +19,7 @@ const Notification = () =>  {
     const Path = props => ( <
         motion.path fill = "transparent"
         strokeWidth = "1.0"
-        stroke = "hsl(0, 0%, 1%)"
+        stroke = "hsl(0, 0%, 10%)"
         strokeLinecap = "round" {...props }
         />
     );
